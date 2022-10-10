@@ -36,10 +36,10 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(classify_triangle(10,10,10), "Equilateral")
         self.assertEqual(classify_triangle(8,8,4), "Isosceles")
         self.assertEqual(classify_triangle(8,5,4), "Scalene")
-        self.assertEqual(classify_triangle(2,7,4), "The traingle is not possible with given sides")
-        self.assertNotEqual(classify_triangle(1,1,1), "The traingle is not possible with given sides")
+        self.assertEqual(classify_triangle(2,7,4), "The triangle is not possible with given sides")
+        self.assertNotEqual(classify_triangle(1,1,1), "The triangle is not possible with given sides")
         self.assertNotEqual(classify_triangle(2,3,5), "Right Angle")
-        self.assertEqual(classify_triangle("2","3","5"), "The traingle is not possible with given sides")
+        self.assertEqual(classify_triangle("2","3","5"), "The triangle is not possible with given sides")
         self.assertEqual(classify_triangle(10.5, 10.5, 10.5), "Equilateral")
         self.assertNotEqual(classify_triangle(-10.5, -10.5, 10.5), "Equilateral")
 
