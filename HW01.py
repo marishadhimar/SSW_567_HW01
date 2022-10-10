@@ -16,7 +16,7 @@ def classify_triangle(a, b, c):
             triangle_type = "Scalene"
             return triangle_type
     else:
-        return "The traingle is not possible with given sides"
+        return "The triangle is not possible with given sides"
 
 
 def check_if_valid_triangle(a, b, c):
@@ -26,12 +26,12 @@ def check_if_valid_triangle(a, b, c):
         return False
 
 
-class TestTraingle(unittest.TestCase):
+class TestTriangle(unittest.TestCase):
 
     def setUp(self):
         pass
 
-    def test_traingle(self):
+    def test_triangle(self):
         self.assertEqual(classify_triangle(3,4,5), "Right angle")
         self.assertEqual(classify_triangle(10,10,10), "Equilateral")
         self.assertEqual(classify_triangle(8,8,4), "Isosceles")
